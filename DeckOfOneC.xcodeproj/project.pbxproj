@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		AFB5A1FE224AB66800E9C476 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB5A1FD224AB66800E9C476 /* AppDelegate.m */; };
-		AFB5A201224AB66800E9C476 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB5A200224AB66800E9C476 /* ViewController.m */; };
 		AFB5A204224AB66800E9C476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5A202224AB66800E9C476 /* Main.storyboard */; };
 		AFB5A206224AB66A00E9C476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB5A205224AB66A00E9C476 /* Assets.xcassets */; };
 		AFB5A209224AB66A00E9C476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5A207224AB66A00E9C476 /* LaunchScreen.storyboard */; };
 		AFB5A20C224AB66A00E9C476 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB5A20B224AB66A00E9C476 /* main.m */; };
+		AFB5A214224AB8FE00E9C476 /* ZZCard.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB5A213224AB8FE00E9C476 /* ZZCard.m */; };
+		AFB5A219224AC7E600E9C476 /* ZZCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB5A218224AC7E600E9C476 /* ZZCardController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AFB5A1F9224AB66800E9C476 /* DeckOfOneC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB5A1FC224AB66800E9C476 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFB5A1FD224AB66800E9C476 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AFB5A1FF224AB66800E9C476 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AFB5A200224AB66800E9C476 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AFB5A203224AB66800E9C476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFB5A205224AB66A00E9C476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB5A208224AB66A00E9C476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB5A20A224AB66A00E9C476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB5A20B224AB66A00E9C476 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFB5A212224AB8FE00E9C476 /* ZZCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZCard.h; sourceTree = "<group>"; };
+		AFB5A213224AB8FE00E9C476 /* ZZCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZCard.m; sourceTree = "<group>"; };
+		AFB5A217224AC7E600E9C476 /* ZZCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZCardController.h; sourceTree = "<group>"; };
+		AFB5A218224AC7E600E9C476 /* ZZCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZCardController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,8 @@
 		AFB5A1F0224AB66800E9C476 = {
 			isa = PBXGroup;
 			children = (
+				AFB5A216224AB91300E9C476 /* ModelController */,
+				AFB5A215224AB90500E9C476 /* Model */,
 				AFB5A1FB224AB66800E9C476 /* DeckOfOneC */,
 				AFB5A1FA224AB66800E9C476 /* Products */,
 			);
@@ -60,8 +65,6 @@
 			children = (
 				AFB5A1FC224AB66800E9C476 /* AppDelegate.h */,
 				AFB5A1FD224AB66800E9C476 /* AppDelegate.m */,
-				AFB5A1FF224AB66800E9C476 /* ViewController.h */,
-				AFB5A200224AB66800E9C476 /* ViewController.m */,
 				AFB5A202224AB66800E9C476 /* Main.storyboard */,
 				AFB5A205224AB66A00E9C476 /* Assets.xcassets */,
 				AFB5A207224AB66A00E9C476 /* LaunchScreen.storyboard */,
@@ -69,6 +72,24 @@
 				AFB5A20B224AB66A00E9C476 /* main.m */,
 			);
 			path = DeckOfOneC;
+			sourceTree = "<group>";
+		};
+		AFB5A215224AB90500E9C476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5A212224AB8FE00E9C476 /* ZZCard.h */,
+				AFB5A213224AB8FE00E9C476 /* ZZCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFB5A216224AB91300E9C476 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				AFB5A217224AC7E600E9C476 /* ZZCardController.h */,
+				AFB5A218224AC7E600E9C476 /* ZZCardController.m */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFB5A201224AB66800E9C476 /* ViewController.m in Sources */,
 				AFB5A20C224AB66A00E9C476 /* main.m in Sources */,
+				AFB5A214224AB8FE00E9C476 /* ZZCard.m in Sources */,
 				AFB5A1FE224AB66800E9C476 /* AppDelegate.m in Sources */,
+				AFB5A219224AC7E600E9C476 /* ZZCardController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
